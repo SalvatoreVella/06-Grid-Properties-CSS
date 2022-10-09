@@ -1,0 +1,36 @@
+
+ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1.2fr repeat(2, 1fr) 1.2fr;
+    grid-template-areas: 
+    "gre gre gre"
+    "yel red blu"
+    "yel red blu"
+    "ora ora blu";
+}
+
+#green {
+    grid-area: gre;
+}
+
+#yellow {
+    grid-area: yel;
+}
+
+#red{
+    grid-area: red;
+}
+
+#blue {
+    grid-area: blu;
+}
+
+#orange {
+    grid-area: ora;
+}
